@@ -18,6 +18,11 @@ namespace DAL
         }
 
         
+        /// <summary>
+        /// Returns the column names for a given DataRecord
+        /// </summary>
+        /// <param name="record"></param>
+        /// <returns>A sequence of column names from the DataRecord</returns>
         public static IEnumerable<string> Columns(this IDataRecord record)
         {
             for (int i = 0; i < record.FieldCount; i++) yield return record.GetName(i);
