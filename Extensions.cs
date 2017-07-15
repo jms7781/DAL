@@ -18,8 +18,6 @@ namespace DAL
         }
 
         
-        ///
-
         public static IEnumerable<string> Columns(this IDataRecord record)
         {
             for (int i = 0; i < record.FieldCount; i++) yield return record.GetName(i);

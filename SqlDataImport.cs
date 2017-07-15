@@ -13,7 +13,7 @@ namespace DAL
     /// <summary>
     /// Provides methods for importing data into a SqlServer database using SqlBulkCopy
     /// </summary>
-    class SqlDataImport
+    class SqlDataImport : DataImport
     {
         private string cs;
 
